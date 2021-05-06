@@ -71,7 +71,7 @@ def getArg():
 
 # loading hate speech intensity scale
 dictionary = {}
-with open("D:/data/bad-hate-dictionary.txt", "r") as f:
+with open(os.path.join('bad-hate-dictionary.txt'), 'r') as f:
     for line in f:
         s = line.strip().split(" ")
         dictionary[s[0]] = s[1]
